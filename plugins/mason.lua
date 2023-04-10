@@ -23,4 +23,8 @@ return {
       -- ensure_installed = { "python" },
     },
   },
+  {
+    "rebelot/kanagawa.nvim",
+    opts = {}
+  }
 }
