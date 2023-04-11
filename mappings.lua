@@ -116,7 +116,16 @@ return {
     },
     -- Command palette
     ["<leader>fC"] = false,
-    ["<leader>cp"] = { function() require("telescope.builtin").commands() end, desc = "Command Palette" }
+    ["<leader>cp"] = { function() require("telescope.builtin").commands() end, desc = "Command Palette" },
+    -- Smart splits
+    ["<C-h>"] = false,
+    ["<leader>h"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" },
+    ["<C-j>"] = false,
+    ["<leader>j"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to below split" },
+    ["<C-k>"] = false,
+    ["<leader>k"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to above split" },
+    ["<C-l>"] = false,
+    ["<leader>l"] = { function() require("smart-splits").move_cursor_right() end, desc = "Move to right split" },
   },
   t = {
     -- Toggle terminal
