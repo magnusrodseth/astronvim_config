@@ -11,7 +11,9 @@ return {
     ["<C-Left>"] = false,
     ["<C-q>"] = false,
     ["<C-s>"] = false,
-    ["q:"] = ":",
+    ['<leader>e'] = false,
+    -- Neotree
+    ['<leader>pv'] = { '<cmd>Neotree toggle<cr>', desc = "Toggle Neotree" },
     -- better buffer navigation
     ["]b"] = false,
     ["[b"] = false,
